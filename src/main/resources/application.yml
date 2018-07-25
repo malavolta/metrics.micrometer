@@ -1,0 +1,22 @@
+spring:
+  profiles.active: staging
+
+logging:
+  level:
+    ROOT: INFO
+
+server:
+  port: 8080
+
+security.ignored: /**
+
+management:
+  endpoints.web.exposure.include: '*'
+
+
+
+info:
+  app:
+    version: 2.0
+    description: Api para ingresar Ventas para los seguros de Desgravamen, Cesantia y fraude por canal de venta cmr
+    name: Api Venta
